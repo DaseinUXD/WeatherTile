@@ -3,7 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile", "WeatherTile\WeatherTile.csproj", "{2B6A588C-9FAD-4378-9C66-1E1566BE61DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile", "WeatherTile\WeatherTile.csproj", "{44962979-EE2E-4874-8CB8-7A5961D7A927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSky", "DarkSky\DarkSky.csproj", "{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dark-weather", "..\Dropbox\dark-weather\", "{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64378"
+		Debug.AspNetCompiler.PhysicalPath = "..\Dropbox\dark-weather\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64378\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64378"
+		Release.AspNetCompiler.PhysicalPath = "..\Dropbox\dark-weather\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64378\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64378"
+		SlnRelativePath = "..\Dropbox\dark-weather\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +34,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2B6A588C-9FAD-4378-9C66-1E1566BE61DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B6A588C-9FAD-4378-9C66-1E1566BE61DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B6A588C-9FAD-4378-9C66-1E1566BE61DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B6A588C-9FAD-4378-9C66-1E1566BE61DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44962979-EE2E-4874-8CB8-7A5961D7A927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44962979-EE2E-4874-8CB8-7A5961D7A927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44962979-EE2E-4874-8CB8-7A5961D7A927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44962979-EE2E-4874-8CB8-7A5961D7A927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

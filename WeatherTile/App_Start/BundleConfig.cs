@@ -12,10 +12,6 @@ namespace WeatherTile
     // For more information on Bundling, visit https://go.microsoft.com/fwlink/?LinkID=303951
     public static void RegisterBundles(BundleCollection bundles)
     {
-      bundles.Add(new StyleBundle("~/bundles/StyleSheets").Include(
-                      "~/Content/bootstrap*",
-                      "~/Content/Site.css"));
-
       bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
                       "~/Scripts/WebForms/WebForms.js",
                       "~/Scripts/WebForms/WebUIValidation.js",

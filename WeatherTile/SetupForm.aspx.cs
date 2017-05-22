@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WeatherTile
 {
-  public partial class LocationForm : System.Web.UI.Page
+  public partial class SetupForm : System.Web.UI.Page
   {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
-       
   }
 }

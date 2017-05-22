@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile", "WeatherTile\WeatherTile.csproj", "{44962979-EE2E-4874-8CB8-7A5961D7A927}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSky", "DarkSky\DarkSky.csproj", "{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dark-weather", "..\Dropbox\dark-weather\", "{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -28,6 +26,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dark-weather", "..\Dropbox\
 		SlnRelativePath = "..\Dropbox\dark-weather\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile.Model", "WeatherTile.Model\WeatherTile.Model.csproj", "{101FA093-95B2-49E8-A172-100FD7310AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile.Repository", "WeatherTile.Repository\WeatherTile.Repository.csproj", "{E05689D3-1032-4250-9E78-ADB2E86AD2A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,14 +40,18 @@ Global
 		{44962979-EE2E-4874-8CB8-7A5961D7A927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44962979-EE2E-4874-8CB8-7A5961D7A927}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44962979-EE2E-4874-8CB8-7A5961D7A927}.Release|Any CPU.Build.0 = Release|Any CPU
-		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{698494D4-B7F7-42AB-A99C-9A78CCDD0DD6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{101FA093-95B2-49E8-A172-100FD7310AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101FA093-95B2-49E8-A172-100FD7310AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101FA093-95B2-49E8-A172-100FD7310AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101FA093-95B2-49E8-A172-100FD7310AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05689D3-1032-4250-9E78-ADB2E86AD2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05689D3-1032-4250-9E78-ADB2E86AD2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05689D3-1032-4250-9E78-ADB2E86AD2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05689D3-1032-4250-9E78-ADB2E86AD2A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,16 +1,25 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VerifySetupForm.aspx.cs" Inherits="WeatherTile.VerifySetupForm" %>
+﻿<%@ Page Title="Verification" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VerifySetupForm.aspx.cs" Inherits="WeatherTile.VerifySetupForm" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Verification</title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+  <div class="container">
     <div>
-      <h1><asp:Label ID="Label1" runat="server" Text="WeatherTile Setup Verification"></asp:Label></h1>
+      <h1>
+        <asp:Label ID="Label1" runat="server" Text="WeatherTile Setup Verification"></asp:Label></h1>
     </div>
-    </form>
-</body>
-</html>
+    <fieldset disabled>
+      <legend>Property Information</legend>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-inline form-group">
+            <asp:Label ID="Label2" runat="server" Text="Name: "></asp:Label>
+            <asp:TextBox CssClass="form-control" ID="propName" runat="server" Text="Hotel name text"></asp:TextBox>
+          </div>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+
+
+
+</asp:Content>

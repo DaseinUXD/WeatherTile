@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="Setup" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SetupForm.aspx.cs" Inherits="WeatherTile.SetupForm" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+  <asp:ScriptManagerProxy runat="server">
+    <Scripts>
+      <asp:ScriptReference Name="geolocation.js"
+    </Scripts>
+
+  </asp:ScriptManagerProxy>
   <%--<form id="form1" runat="server">--%>
   <div class="container">
     <h1>
@@ -50,15 +57,21 @@
         <div class="form-inline form-group">
           <asp:Label ID="Label5" runat="server" Text="PSM sent: "></asp:Label>
           <asp:TextBox CssClass="form-control" ID="propSendDays" runat="server"></asp:TextBox>
-          <asp:Label ID="propArrival" runat="server" Text="days prior to guest arrival."></asp:Label>
+          <asp:Label ID="Label16" runat="server" Text="days prior to guest arrival."></asp:Label>
         </div>
       </div>
       <div class="col-lg-6">
-        <asp:Button CssClass="btn btn-primary" ID="submit" runat="server" Text="Submit" />
+        <asp:Button CssClass="btn btn-primary active" ID="submit" runat="server" Text="Submit" OnClick="submit_Click" />
       </div>
     </div>
   </div>
 
+  <script>
+    var propGeoLocation = new XMLHttpRequest();
+    var propGeoLocObj;
+    var propZip = document.getElementById("MainContent_propZip").value;
+    console.log(propZip);
+  </script>
 
 
 

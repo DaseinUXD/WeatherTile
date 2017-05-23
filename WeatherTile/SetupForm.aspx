@@ -2,12 +2,7 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-  <asp:ScriptManagerProxy runat="server">
-    <Scripts>
-      <asp:ScriptReference Name="geolocation.js"
-    </Scripts>
 
-  </asp:ScriptManagerProxy>
   <%--<form id="form1" runat="server">--%>
   <div class="container">
     <h1>
@@ -66,15 +61,7 @@
     </div>
   </div>
 
-  <script>
-    var propGeoLocation = new XMLHttpRequest();
-    var propGeoLocObj;
-    var propZip = document.getElementById("MainContent_propZip").value;
-    console.log(propZip);
-  </script>
-
-
-
+  
   <%--</form>--%>
 </asp:Content>
 

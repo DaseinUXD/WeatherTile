@@ -6,6 +6,7 @@
   <%--<form id="form1" runat="server">--%>
   <div class="container">
     <h1>
+      <%:Title %>
       <asp:Label ID="Label1" runat="server" Text="WeatherTile Setup"></asp:Label></h1>
 
     <h3>Property Information</h3>
@@ -56,7 +57,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <asp:Button CssClass="btn btn-primary active" ID="submit" runat="server" Text="Submit" OnClick="submit_Click" />
+        <asp:Button CssClass="btn btn-primary active" ID="submit" runat="server" Text="Submit" OnClick="Submit_Click" />
       </div>
     </div>
   </div>

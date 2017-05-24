@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using WeatherTile.Model;
+using System.Net;
+using System.Web.Script.Serialization;
 
 namespace WeatherTile
 {
@@ -16,7 +18,7 @@ namespace WeatherTile
 
     }
 
-    protected void submit_Click(object sender, EventArgs e)
+    protected void Submit_Click(object sender, EventArgs e)
     {
       var property = new PropertyInfo();
       property.PropertyName = propName.Text;
@@ -25,10 +27,28 @@ namespace WeatherTile
       property.PropertyState = propState.Text;
       property.PropertyZipCode = int.Parse(propZip.Text);
       property.PropertySendDays = int.Parse(propSendDays.Text);
+
       Session["CurrentProperty"] = property;
-      Response.Redirect("VerifySetupForm.aspx");
+
+      var geoLocation = new GeoLocation();
       
+      int geoLocZip = property.PropertyZipCode;
+      string url = string.Format("http://ziplocate.us/api/v1/" + geoLocZip);
+      using (WebClient client = new WebClient())
+      {
+        string json = client.DownloadString(url);
+        GeoLocDownload geoLocDwn = (new JavaScriptSerializer().Deserialize<GeoLocDownload>(json));
+        double lat = geoLocDwn.Lat;
+        geoLocation.GeoLocLongitude = geoLocDwn.Lng;
+        geoLocation.GeoLocLatitude = geoLocDwn.Lat;
+        Session["GeoLocDnld"] = geoLocDwn;
+      }
+
+      Session["CurrentLocation"] = geoLocation;
+      Response.Redirect("VerifySetupForm.aspx");
+
 
     }
+
   }
 }

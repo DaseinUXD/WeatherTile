@@ -222,6 +222,7 @@
     <Content Include="Site.Master" />
     <Content Include="VerifySetupForm.aspx" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="DarkSkyResultsForm.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -254,7 +255,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetupForm.aspx.cs">
       <DependentUpon>SetupForm.aspx</DependentUpon>
@@ -291,10 +291,18 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="DarkSkyResultsForm.aspx.cs">
+      <DependentUpon>DarkSkyResultsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DarkSkyResultsForm.aspx.designer.cs">
+      <DependentUpon>DarkSkyResultsForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+    <Folder Include="fonts\Models\" />
+    <Folder Include="Properties\App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

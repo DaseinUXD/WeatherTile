@@ -15,6 +15,7 @@ namespace WeatherTile
   {
     protected void Page_Load(object sender, EventArgs e)
     {
+      
 
     }
 
@@ -28,18 +29,18 @@ namespace WeatherTile
       property.PropertyZipCode = int.Parse(propZip.Text);
       property.PropertySendDays = int.Parse(propSendDays.Text);
 
-      Session["CurrentProperty"] = property;
+      Application["CurrentProperty"] = property;
 
       int geoLocZip = property.PropertyZipCode;
       string url = string.Format("http://ziplocate.us/api/v1/" + geoLocZip);
       using (WebClient client = new WebClient())
       {
         string json = client.DownloadString(url);
-        GeoLocDownload geoLocDwn = (new JavaScriptSerializer().Deserialize<GeoLocDownload>(json));
-        float lat = geoLocDwn.lat;
-        float lng = geoLocDwn.lng;
+        GeoLocation geoLoc = (new JavaScriptSerializer().Deserialize<GeoLocation>(json));
+        float lat = geoLoc.lat;
+        float lng = geoLoc.lng;
         
-        Session["GeoLocDnld"] = geoLocDwn;
+        Session["GeoLocation"] = geoLoc;
       }
            
       Response.Redirect("VerifySetupForm.aspx");

@@ -12,8 +12,8 @@ namespace WeatherTile
   {
     protected void Page_Load(object sender, EventArgs e)
     {
-      PropertyInfo property = Session["CurrentProperty"] as PropertyInfo;
-      GeoLocDownload geoLocDwn = Session["GeoLocDnld"] as GeoLocDownload;
+      PropertyInfo property = Application["CurrentProperty"] as PropertyInfo;
+      GeoLocation geoLoc = Session["GeoLocation"] as GeoLocation;
       propName.Text = property.PropertyName;
       propFTP.Text = property.PropertyFTP.ToString();
       propCity.Text = property.PropertyCity;
@@ -21,11 +21,22 @@ namespace WeatherTile
       propZip.Text = property.PropertyZipCode.ToString();
       propSendDays.Text = property.PropertySendDays.ToString();
       
-      propLat.Text = geoLocDwn.lat.ToString();
-      propLon.Text = geoLocDwn.lng.ToString();
+      propLat.Text = geoLoc.lat.ToString();
+      propLon.Text = geoLoc.lng.ToString();
 
-      Session["CurrentGeoLocation"] = geoLocDwn;
-      Response.Redirect("");
+      Application["CurrentGeoLocation"] = geoLoc;
+      
+    }
+
+    protected void EditProp_Click(object sender, EventArgs e)
+    {
+      Response.Redirect("SetupForm.aspx");
+    }
+
+    protected void BuildTile_Click(object sender, EventArgs e)
+    {
+
+      Response.Redirect("DarkSkyBuildForm.aspx");
     }
   }
 }

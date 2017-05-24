@@ -9,88 +9,58 @@
     </div>
 
     <h3>Property Information</h3>
-    <div class="row">
+    <div>
       <div class="form-group">
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label2" runat="server" Text="Name: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-info" ID="propName" runat="server" Text=""></asp:Label>
-
-        </div>
+        <label class="control-label" id="Label2">Name: </label>
+        <asp:Label CssClass="form-control input-lg" ID="propName" runat="server" Text="" readonly="true"></asp:Label>
       </div>
+      
       <div class="form-group">
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label3" runat="server" Text="FTP Box: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-info" ID="propFTP" runat="server" Text=""></asp:Label>
-
-        </div>
+        <label class="control-label" id="Label3">FTP Box: </label>
+        <asp:Label CssClass="form-control input-lg" ID="propFTP" runat="server" Text="" readonly="true"></asp:Label>
       </div>
+      
       <div class="form-group">
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label5" runat="server" Text="City: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-info" ID="propCity" runat="server" Text=""></asp:Label>
+        <label class="control-label" id="Label5">City:</label>
 
-        </div>
+        <asp:Label CssClass="form-control input-lg" ID="propCity" runat="server" Text="" readonly="true"></asp:Label>
       </div>
+      
       <div class="form-group">
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label7" runat="server" Text="State: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-info" ID="propState" runat="server" Text=""></asp:Label>
+        <label class="control-label" id="Label7">State: </label>
 
-        </div>
+        <asp:Label CssClass="form-control input-lg" ID="propState" runat="server" Text="" readonly="true"></asp:Label>
       </div>
+      
       <div class="form-group">
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label9" runat="server" Text="Zip Code: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-info" ID="propZip" runat="server" Text=""></asp:Label>
-        </div>
+        <label class="control-label" id="Label9">Zip Code: </label>
+
+        <asp:Label CssClass="form-control input-lg" ID="propZip" runat="server" Text="" readonly="true"></asp:Label>
       </div>
+      
       <div class="form-group">
+        <label class="control-label" id="Label4" >Latitude: </label>
 
-
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label4" runat="server" Text="Latitude: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-success" ID="propLat" runat="server" Text=""></asp:Label>
-        </div>
-      </div>
-      <div class="form-group">
-
-
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label8" runat="server" Text="Longitude: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-success" ID="propLon" runat="server" Text=""></asp:Label>
-        </div>
-
-
-
+        <asp:Label CssClass="text-success" ID="propLat" runat="server" Text="" readonly="true"></asp:Label>
       </div>
 
-
-
       <div class="form-group">
-        <asp:Label CssClass="col-lg-2 text-right" ID="Label11" runat="server" Text="Days before send PSM: "></asp:Label>
-        <div class="col-lg-10">
-          <asp:Label CssClass="text-info" ID="propSendDays" runat="server" Text=""></asp:Label>
+        <label class="control-label" id="Label8">Longitude: </label>
 
-        </div>
+        <asp:Label CssClass="text-success" ID="propLon" runat="server" Text="" readonly="true"></asp:Label>
       </div>
+      
+      <div class="form-group">
+        <label class="control-label" id="Label11">Days before send PSM</label>
 
-
+        <asp:Label CssClass="form-control input-lg" ID="propSendDays" runat="server" Text="" readonly="true"></asp:Label>
+      </div>
     </div>
+    <div>
+      <asp:Button CssClass="btn btn-primary active" ID="BuildTile" runat="server" Text="Build" OnClick="BuildTile_Click" />
+    <asp:Button CssClass="btn btn-warning" ID="EditProp" runat="server" Text="Edit" OnClick="EditProp_Click" />
+    </div>
+
 
   </div>
-  <br />
-  <div class="form-group">
-    <div class="col-lg-2 text-right">
-      <asp:Button CssClass="btn btn-primary active" ID="buildTile" runat="server" Text="Build Tile" />
-    </div>
-    <div class="col-lg-10">
-      <asp:Button CssClass="btn btn-warning" ID="editProp" runat="server" Text="Edit Property" />
-
-    </div>
-  </div>
-
-
-
-
-
 </asp:Content>

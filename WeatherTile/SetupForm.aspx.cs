@@ -30,21 +30,18 @@ namespace WeatherTile
 
       Session["CurrentProperty"] = property;
 
-      var geoLocation = new GeoLocation();
-      
       int geoLocZip = property.PropertyZipCode;
       string url = string.Format("http://ziplocate.us/api/v1/" + geoLocZip);
       using (WebClient client = new WebClient())
       {
         string json = client.DownloadString(url);
         GeoLocDownload geoLocDwn = (new JavaScriptSerializer().Deserialize<GeoLocDownload>(json));
-        double lat = geoLocDwn.Lat;
-        geoLocation.GeoLocLongitude = geoLocDwn.Lng;
-        geoLocation.GeoLocLatitude = geoLocDwn.Lat;
+        float lat = geoLocDwn.lat;
+        float lng = geoLocDwn.lng;
+        
         Session["GeoLocDnld"] = geoLocDwn;
       }
-
-      Session["CurrentLocation"] = geoLocation;
+           
       Response.Redirect("VerifySetupForm.aspx");
 
 

@@ -222,7 +222,7 @@
     <Content Include="Site.Master" />
     <Content Include="VerifySetupForm.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="DarkSkyResultsForm.aspx" />
+    <Content Include="DarkSkyResponseForm.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -291,12 +291,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="DarkSkyResultsForm.aspx.cs">
-      <DependentUpon>DarkSkyResultsForm.aspx</DependentUpon>
+    <Compile Include="DarkSkyResponseForm.aspx.cs">
+      <DependentUpon>DarkSkyResponseForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DarkSkyResultsForm.aspx.designer.cs">
-      <DependentUpon>DarkSkyResultsForm.aspx</DependentUpon>
+    <Compile Include="DarkSkyResponseForm.aspx.designer.cs">
+      <DependentUpon>DarkSkyResponseForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

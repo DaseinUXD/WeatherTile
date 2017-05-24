@@ -13,7 +13,6 @@ namespace WeatherTile
     protected void Page_Load(object sender, EventArgs e)
     {
       PropertyInfo property = Session["CurrentProperty"] as PropertyInfo;
-      GeoLocation geoLocation = Session["CurrentLocation"] as GeoLocation;
       GeoLocDownload geoLocDwn = Session["GeoLocDnld"] as GeoLocDownload;
       propName.Text = property.PropertyName;
       propFTP.Text = property.PropertyFTP.ToString();
@@ -22,8 +21,8 @@ namespace WeatherTile
       propZip.Text = property.PropertyZipCode.ToString();
       propSendDays.Text = property.PropertySendDays.ToString();
       
-      propLat.Text = geoLocDwn.Lat.ToString();
-      propLon.Text = geoLocDwn.Lng.ToString();
+      propLat.Text = geoLocDwn.lat.ToString();
+      propLon.Text = geoLocDwn.lng.ToString();
 
       Session["CurrentGeoLocation"] = geoLocDwn;
       Response.Redirect("");

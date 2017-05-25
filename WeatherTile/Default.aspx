@@ -21,7 +21,7 @@
         </li>
       </ul>
       <p>
-        <a class="btn btn-default" href="DarkSkySettingsForm.aspx">Configure API</a>
+        <a class="btn btn-default" href="DarkSkySettingsForm.aspx">Edit Defaults</a>
       </p>
     </div>
     <div class="col-md-4">

@@ -18,7 +18,7 @@
   </div>
   <div class="input-group">
     <label class="control-label">Measurment Units:</label>
-    <asp:DropDownList CssClass="form-control" ID="ddUnits" runat="server"></asp:DropDownList>
+    <asp:DropDownList CssClass="form-control" ID="ddUnits" runat="server" DataTextField="si"></asp:DropDownList>
   </div>
 
   <div class="input-group">

@@ -21,6 +21,26 @@ namespace WeatherTile
       ckboxExclude.DataSource = Enum.GetNames(typeof(Exclude));
       ckboxExclude.DataBind();
 
+      var unitsUsed = ddUnits.DataTextField.ToString();
+      
+      var languageUsed = ddLanguage.DataTextField.ToString();
+
+      int[] selection(CheckBoxList ckboxExclude)
+      {
+        List<int> selectedExcluded = new List<int>();
+
+        foreach (ListItem item in ckboxExclude.Items)
+        {
+          if (item.Selected)
+          {
+            selectedExcluded.Add(ckboxExclude.Items.IndexOf(item));
+          }
+        }
+
+        return selectedExcluded.ToArray();
+
+      }
+
     }
   }
 }

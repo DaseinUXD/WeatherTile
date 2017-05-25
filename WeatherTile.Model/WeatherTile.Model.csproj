@@ -45,14 +45,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DarkSkyConstants.cs" />
+    <Compile Include="DarkSkyLanguages.cs" />
     <Compile Include="DarkSkyRequest.cs" />
     <Compile Include="DarkSkyRequestHelpers.cs" />
     <Compile Include="DarkSkyResponse.cs" />
     <Compile Include="GeoLocation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyInfo.cs" />
+    <Compile Include="WeatherIcons.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DarkSkyExampleRequest.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

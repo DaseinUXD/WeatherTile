@@ -4,12 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WeatherTile.Model;
 
 namespace WeatherTile
 {
-  public partial class DarkSkySettingsForm1 : System.Web.UI.Page
+  public partial class DarkSkySettingsForm : System.Web.UI.Page
   {
-    protected void Page_Load(object sender, EventArgs e)
+    protected void Page_Load (object sender, EventArgs e)
     {
 
     }

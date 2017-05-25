@@ -169,6 +169,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="DarkSkySettingsForm.aspx" />
+    <Content Include="DarkSkySettingsForm2.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -184,6 +185,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="DarkSky.md" />
     <Content Include="package.json" />
     <Content Include="bower.json" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -256,6 +258,13 @@
     <Compile Include="DarkSkySettingsForm.aspx.designer.cs">
       <DependentUpon>DarkSkySettingsForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DarkSkySettingsForm2.aspx.cs">
+      <DependentUpon>DarkSkySettingsForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DarkSkySettingsForm2.aspx.designer.cs">
+      <DependentUpon>DarkSkySettingsForm2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -314,6 +323,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="fonts\Models\" />
     <Folder Include="Properties\App_Data\" />
+    <Folder Include="Views\DataService\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

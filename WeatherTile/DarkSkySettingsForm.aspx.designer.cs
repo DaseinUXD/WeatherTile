@@ -22,22 +22,22 @@ namespace WeatherTile {
         protected global::System.Web.UI.WebControls.TextBox darkSkyKey;
         
         /// <summary>
-        /// ddUnits control.
+        /// ckboxUnits control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddUnits;
+        protected global::System.Web.UI.WebControls.RadioButtonList ckboxUnits;
         
         /// <summary>
-        /// ddLanguage control.
+        /// ckboxLanguage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddLanguage;
+        protected global::System.Web.UI.WebControls.RadioButtonList ckboxLanguage;
         
         /// <summary>
         /// ckboxExclude control.

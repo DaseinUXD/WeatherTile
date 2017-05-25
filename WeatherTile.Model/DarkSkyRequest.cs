@@ -49,12 +49,12 @@ namespace WeatherTile.Model
       return result;
     }
 
-    public DarkSkyRequest(string apiKey, float latF, float longF, Unit unit, Language? lang=null, Extend[] extend = null, Exclude[] exclude = null)
+    public DarkSkyRequest(string apiKey, float latF, float longF, MeasurementUnit unit, Language? lang=null, Extend[] extend = null, Exclude[] exclude = null)
     {
       _apiKey = apiKey;
       _latitude = latF.ToString(CultureInfo.InvariantCulture);
       _longitude = longF.ToString(CultureInfo.InvariantCulture);
-      _unit = Enum.GetName(typeof(Unit), unit);
+      _unit = Enum.GetName(typeof(MeasurementUnit), unit);
       _extend = (extend != null) ? DarkSkyRequestHelpers.FormatExtendString(extend) : "";
       _exclude = (exclude != null) ? DarkSkyRequestHelpers.FormatExcludeString(exclude) : "";
       _lang = (lang != null) ? DarkSkyRequestHelpers.FormatLanguageEnum(lang) : Language.en.ToString();

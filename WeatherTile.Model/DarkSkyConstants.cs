@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WeatherTile.Model
 {
-  public enum Unit
+  public enum MeasurementUnit
   {
     us,
     si,

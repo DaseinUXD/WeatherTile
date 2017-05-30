@@ -169,7 +169,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="DarkSkySettingsForm.aspx" />
-    <Content Include="DarkSkySettingsForm2.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -257,13 +256,6 @@
     </Compile>
     <Compile Include="DarkSkySettingsForm.aspx.designer.cs">
       <DependentUpon>DarkSkySettingsForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DarkSkySettingsForm2.aspx.cs">
-      <DependentUpon>DarkSkySettingsForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DarkSkySettingsForm2.aspx.designer.cs">
-      <DependentUpon>DarkSkySettingsForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

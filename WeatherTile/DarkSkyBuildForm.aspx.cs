@@ -12,8 +12,40 @@ namespace WeatherTile
   {
     protected void Page_Load(object sender, EventArgs e)
     {
+      PropertyInfo property = Application["CurrentProperty"] as PropertyInfo;
       GeoLocation geoLoc = Application["CurrentGeoLocation"] as GeoLocation;
-      
+      DarkSkySettings currentSettings = Application["CurrentSettings"] as DarkSkySettings;
+
+      var darkSkyBuild = new DarkSkyRequest();
+
+      apiKey.Text = "0ab072376462dd056d5a7f08c9c344a6";
+
+      darkSkyUrl.Text = "https://api.darksky.net/forecast";
+
+      propName.Text = property.PropertyName;
+      propLat.Text = geoLoc.lat.ToString();
+      propLon.Text = geoLoc.lng.ToString();
+      propDays.Text = property.PropertySendDays.ToString();
+
+
+
+      propLat.Text = darkSkyBuild.DarkSkyLatitude.ToString();
+      propLon.Text = darkSkyBuild.DarkSkyLongitude.ToString();
+      apiKey.Text = darkSkyBuild.DarkSkyAPI.ToString();
+      darkSkyUrl.Text = darkSkyBuild.DarkSkyRequestUrl.ToString();
+
+
+      Application["DarkSkyBuild"] = darkSkyBuild;
+            
+    }
+
+    protected void Submit_Click(object sender, EventArgs e)
+    {
+      PropertyInfo property = Application["CurrentProperty"] as PropertyInfo;
+      GeoLocation geoLoc = Application["CurrentGeoLocation"] as GeoLocation;
+      DarkSkyRequest darkSkyBuild = Application["DarkSkyBuild"] as DarkSkyRequest;
+
+
     }
   }
 }

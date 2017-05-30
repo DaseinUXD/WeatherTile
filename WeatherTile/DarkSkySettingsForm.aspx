@@ -1,15 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DarkSkySettingsForm2.aspx.cs" Inherits="WeatherTile.DarkSkySettingsForm" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="settingsContent" ContentPlaceHolderID="MainContent" runat="server">
 
   <div class="container">
     <div class="jumbotron">
       <h1>Dark Sky API Settings</h1>
     </div>
+    <span class="label label-default">Dark Sky Base URL: </span>
+    <asp:TextBox CssClass="form-control" ID="baseUrl" runat="server" Text="https://api.darksky.net/forecast/"></asp:TextBox>
     <div class="form-group">
       <label for="darkSkyKey" class="control-label">Private <a href="https://darksky.net/dev/account" target="_blank">API Key</a></label>
       <div class="col-lg-3 input-group">
-        <asp:TextBox CssClass="form-control" ID="darkSkyKey" ViewStateMode="Enabled" ReadOnly="true" Text="" TextMode="Password" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass="form-control" ID="privateApiKey" TextMode="Password" runat="server" Text="0ab072376462dd056d5a7f08c9c344a6"></asp:TextBox>
         <span class="input-group-btn" id="12">
           <button class="btn btn-default" id="showPswdBtn" type="button">
             <span id="eyeIcon" aria-hidden="true" class="glyphicon glyphicon-eye-open"></span>
@@ -30,7 +32,7 @@
           <div class="panel-body">
 
             <div class="form-group">
-              <asp:RadioButtonList CssClass="" ID="ckboxUnits" runat="server">
+              <asp:RadioButtonList CssClass="" ID="selectedUnits" runat="server">
 
                 <asp:ListItem CssClass="input-group" Selected="True">auto</asp:ListItem>
                 <asp:ListItem>si</asp:ListItem>
@@ -50,8 +52,8 @@
             <h3 class="panel-title">Language</h3>
           </div>
           <div class="row">
-            <asp:RadioButtonList ID="ckboxLanguage" runat="server">
-              <asp:ListItem Text="ar"></asp:ListItem>
+            <asp:RadioButtonList ID="selectedLang" runat="server">
+              <asp:ListItem>ar</asp:ListItem>
               <asp:ListItem>az</asp:ListItem>
               <asp:ListItem>be</asp:ListItem>
               <asp:ListItem>bs</asp:ListItem>
@@ -96,7 +98,7 @@
 
           </div>
           <div class="panel-body">
-            <asp:CheckBoxList CssClass="col-lg-6" ID="ckboxExclude" runat="server">
+            <asp:CheckBoxList CssClass="col-lg-6" ID="selectedExclude" runat="server">
               <asp:ListItem>currently</asp:ListItem>
               <asp:ListItem Selected="True">minutely</asp:ListItem>
               <asp:ListItem Selected="True">hourly</asp:ListItem>
@@ -111,21 +113,22 @@
     </div>
   </div>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      var api = "0ab072376462dd056d5a7f08c9c344a6";
-      console.log(api);
-      api = $("#DarkSkyKey").text();
-      $("#DarkSkyKey").show();
 
-    });
+  <script type="text/javascript">
+    //$(document).ready(function () {
+    //  var api = "0ab072376462dd056d5a7f08c9c344a6";
+    //  console.log(api);
+    //  api = $("#darkSkyApiKey").text();
+    //  $("#darkSkyApiKey").show();
+
+    //});
        $(function () {
       $("#showPswdBtn").mousedown(function () {
-        $("#MainContent_darkSkyKey").attr('type', 'text');
+        $("#MainContent_darkSkyApiKey").attr('type', 'text');
         $("#eyeIcon").attr('class', 'glyphicon glyphicon-eye-close');
       });
       $("#showPswdBtn").mouseup(function () {
-        $("#MainContent_darkSkyKey").attr('type', 'password');
+        $("#MainContent_darkSkyApiKey").attr('type', 'password');
         $("#eyeIcon").attr('class', 'glyphicon glyphicon-eye-open');
       });
     });
@@ -136,4 +139,6 @@
 
     });
   </script>
+
+ <asp:Button ID="settingsSubmit" runat="server" Text="Submit" OnClick="Submit_Click" />
  </asp:Content>

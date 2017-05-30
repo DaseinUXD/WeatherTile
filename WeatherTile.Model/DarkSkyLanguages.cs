@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace WeatherTile.Model
 {
-  class DarkSkyLanguages
+  public class DarkSkyLanguages
   {
-    public string LangShort { get; set; }
-    public string LangLong { get; set; }
+    public List<string> LangLong { get; set; }
+    
+
+
   }
 }

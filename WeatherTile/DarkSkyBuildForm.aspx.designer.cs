@@ -13,6 +13,15 @@ namespace WeatherTile {
     public partial class WeatherPreviewForm {
         
         /// <summary>
+        /// propName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox propName;
+        
+        /// <summary>
         /// apiKey control.
         /// </summary>
         /// <remarks>
@@ -20,5 +29,50 @@ namespace WeatherTile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox apiKey;
+        
+        /// <summary>
+        /// darkSkyUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox darkSkyUrl;
+        
+        /// <summary>
+        /// propLat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox propLat;
+        
+        /// <summary>
+        /// propLon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox propLon;
+        
+        /// <summary>
+        /// propDays control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox propDays;
+        
+        /// <summary>
+        /// submitDarkSky control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submitDarkSky;
     }
 }

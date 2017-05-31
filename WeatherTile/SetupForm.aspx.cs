@@ -40,7 +40,7 @@ namespace WeatherTile
         float lat = geoLoc.lat;
         float lng = geoLoc.lng;
         
-        Session["GeoLocation"] = geoLoc;
+        Application["GeoLocation"] = geoLoc;
       }
            
       Response.Redirect("VerifySetupForm.aspx");

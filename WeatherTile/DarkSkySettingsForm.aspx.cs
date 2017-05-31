@@ -28,6 +28,7 @@ namespace WeatherTile
 
     Application["CurrentSettings"] = settings;
 
+
       
       
     }

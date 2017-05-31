@@ -13,7 +13,7 @@ namespace WeatherTile
     protected void Page_Load(object sender, EventArgs e)
     {
       PropertyInfo property = Application["CurrentProperty"] as PropertyInfo;
-      GeoLocation geoLoc = Session["GeoLocation"] as GeoLocation;
+      GeoLocation geoLoc = Application["GeoLocation"] as GeoLocation;
       propName.Text = property.PropertyName;
       propFTP.Text = property.PropertyFTP.ToString();
       propCity.Text = property.PropertyCity;

@@ -16,12 +16,8 @@ namespace WeatherTile
       GeoLocation geoLoc = Application["CurrentGeoLocation"] as GeoLocation;
       DarkSkySettings currentSettings = Application["CurrentSettings"] as DarkSkySettings;
 
-      var darkSkyBuild = new DarkSkyRequest();
-
-      apiKey.Text = "0ab072376462dd056d5a7f08c9c344a6";
-
-      darkSkyUrl.Text = "https://api.darksky.net/forecast";
-
+           
+      
       propName.Text = property.PropertyName;
       propLat.Text = geoLoc.lat.ToString();
       propLon.Text = geoLoc.lng.ToString();

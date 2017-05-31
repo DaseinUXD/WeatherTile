@@ -1,8 +1,14 @@
 ﻿<%@ Page Title="Dark Sky Results" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DarkSkyBuildForm.aspx.cs" Inherits="WeatherTile.WeatherPreviewForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
   <%-- Property Name --%>
-  <span class="label label-default">Property Name: </span>
+  <span class="label label-default">Property name: </span>
   <asp:TextBox CssClass="form-control" ID="propName" runat="server"></asp:TextBox>
+  <%-- Property City --%>
+  <span class="label label-default">Property city: </span>
+  <asp:TextBox CssClass="form-control" ID="propCity" runat="server"></asp:TextBox>
+  <%-- Property State --%>
+  <span class="label label-default">Property state: </span>
+  <asp:TextBox CssClass="form-control" ID="propState" runat="server"></asp:TextBox>
   <%-- API Key --%>
   <span class="label label-default">Dark Sky apiKey: </span>
   <asp:TextBox CssClass="form-control" ID="apiKey" runat="server"></asp:TextBox>

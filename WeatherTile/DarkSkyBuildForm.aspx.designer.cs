@@ -22,6 +22,24 @@ namespace WeatherTile {
         protected global::System.Web.UI.WebControls.TextBox propName;
         
         /// <summary>
+        /// propCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox propCity;
+        
+        /// <summary>
+        /// propState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox propState;
+        
+        /// <summary>
         /// apiKey control.
         /// </summary>
         /// <remarks>

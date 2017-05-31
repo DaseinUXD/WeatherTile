@@ -17,7 +17,6 @@ namespace WeatherTile
       DarkSkySettings settings = Application["CurrentSettings"] as DarkSkySettings;
       DarkSkyResponse response = Application["CurrentResponse"] as DarkSkyResponse;
 
-
       pic0.AlternateText = response.currently.icon;
       pic00.AlternateText = response.daily.data[0].icon;
       pic1.AlternateText = response.daily.data[1].icon;
@@ -32,7 +31,7 @@ namespace WeatherTile
       propZip.Text = property.PropertyZipCode.ToString();
       currentTemp.Text = Math.Round(response.currently.temperature).ToString()+"&deg;";
       day0Day.Text = response.currently.time.ToString();
-      
+      day0Date.Text = response.currently.time.ToString();
     }
   }
 }

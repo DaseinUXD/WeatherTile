@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="WeatherTile Forecast" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WeatherTileForm.aspx.cs" Inherits="WeatherTile.WeatherTileForm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+  
   <div class="container-fluid">
     <div style="width: 600px; position: relative; left: auto; top: 50px; border-width: 0; margin-left: auto; margin-right: auto">
       <table align="center" border-collapse="collapse" border="0" cellspacing="0" cellpadding="0" style="max-width: 600px; width: 100%; padding: 0px !important;">
@@ -26,12 +27,12 @@
                     </span>
                     <!--current weather icon-->
                     <span style="position: relative; top: 0; left: 0; clear: both; display: inline;">
-                      <asp:Image ID="pic0" Width="90" Height="90" runat="server" style="position: relative; bottom: 2.0em; left: 0;" />
+                      <asp:Image ID="pic0" Width="90" Height="90" runat="server" Style="position: relative; bottom: 2.0em; left: 0;" />
                     </span>
                   </td>
                   <td valign="bottom" colspan="3" style="max-width: 400px; font-size: 2em; letter-spacing: 0.09em; text-align: right;">
                     <span style="position: relative; right: 5%; display: block; line-height: 3.5em;">
-                      <asp:Label ID="day0Day" runat="server" Text=""></asp:Label>
+                      <asp:Label ID="day0Day"  runat="server" Text=""></asp:Label>
                     </span>
                     <span style="position: relative; right: 5%; bottom: 0.9em; display: block;">
                       <asp:Label ID="day0Date" runat="server" Text=""></asp:Label>
@@ -77,6 +78,8 @@
       </table>
     </div>
   </div>
+
+  <script src="Scripts/moment.js"></script>
   <script>
     // Icon0
     var pic0src = 'Content/icons-white/' + $("#MainContent_pic0").attr('alt') + '.svg';
@@ -107,8 +110,14 @@
     console.log(pic5src);
     $("#MainContent_pic5").attr('src', pic5src);
 
-    time = moment.unix($("#MainContent_day0Day").text).format('dddd');
-    console.log(time);
+    var day0 = $("#MainContent_day0Day").text();
+    var newDay = moment.unix(day0).format('dddd');
+    var newDate = moment.unix(day0).format('ll');
+    $("#MainContent_day0Day").text(newDay);
+    $("#MainContent_day0Date").text(newDate);
+
+
+    console.log(newTimeDay + " " + newTimeDate);
 
     function getIcon(iconDesc, picNo) {
 

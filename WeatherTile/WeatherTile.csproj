@@ -169,6 +169,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="DarkSkySettingsForm.aspx" />
+    <Content Include="DaWeatherTileForm.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -256,6 +257,13 @@
     </Compile>
     <Compile Include="DarkSkySettingsForm.aspx.designer.cs">
       <DependentUpon>DarkSkySettingsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DaWeatherTileForm.aspx.cs">
+      <DependentUpon>DaWeatherTileForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DaWeatherTileForm.aspx.designer.cs">
+      <DependentUpon>DaWeatherTileForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

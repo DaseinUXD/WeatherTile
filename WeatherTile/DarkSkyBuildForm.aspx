@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Dark Sky Results" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DarkSkyBuildForm.aspx.cs" Inherits="WeatherTile.WeatherPreviewForm" %>
+﻿<%@ Page Title="Dark Sky Results" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DarkSkyBuildForm.aspx.cs" Inherits="WeatherTile.DarkSkyBuildForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
   <%-- Property Name --%>
   <span class="label label-default">Property name: </span>
@@ -14,7 +14,7 @@
   <asp:TextBox CssClass="form-control" ID="apiKey" runat="server"></asp:TextBox>
   <%-- Dark Sky URL --%>
   <span class="label label-default">Dark Sky URL: </span>
-  <asp:TextBox CssClass="form-control" ID="darkSkyUrl" runat="server"></asp:TextBox>
+  <asp:TextBox CssClass="form-control" ID="baseUrl" runat="server"></asp:TextBox>
   <%-- Property Latitude --%>
   <span class="label label-default">Property Latitude: </span>
   <asp:TextBox CssClass="form-control" ID="propLat" runat="server"></asp:TextBox>
@@ -25,6 +25,6 @@
   <span class="label label-default">Days to send prior to arrival: </span>
   <asp:TextBox CssClass="form-control" ID="propDays" runat="server"></asp:TextBox>
   <br />
-  <%-- Submit Button --%>
-  <asp:Button CssClass="btn btn-primary active" ID="submitDarkSky" runat="server" Text="Submit" OnClick="Submit_Click"/>
+  <%-- Build Button --%>
+  <asp:Button CssClass="btn btn-primary active" ID="buildDarkSky" runat="server" Text="Build" OnClick="Build_Click"/>
 </asp:Content>

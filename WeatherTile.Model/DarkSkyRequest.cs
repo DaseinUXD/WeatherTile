@@ -8,7 +8,7 @@ namespace WeatherTile.Model
 {
   public class DarkSkyRequest
   {
-    public string DarkSkyAPI { get; set; }
+    public string DarkSkyRequestAPI { get; set; }
     public float DarkSkyLatitude { get; set; }
     public float DarkSkyLongitude { get; set; }
     public string DarkSkyRequestUrl { get; set; }

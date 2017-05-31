@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DarkSkyBuild.cs" />
     <Compile Include="DarkSkyConstants.cs" />
     <Compile Include="DarkSkyLanguages.cs" />
     <Compile Include="DarkSkyRequest.cs" />

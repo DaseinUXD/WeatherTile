@@ -10,7 +10,7 @@
 namespace WeatherTile {
     
     
-    public partial class WeatherPreviewForm {
+    public partial class DarkSkyBuildForm {
         
         /// <summary>
         /// propName control.
@@ -49,13 +49,13 @@ namespace WeatherTile {
         protected global::System.Web.UI.WebControls.TextBox apiKey;
         
         /// <summary>
-        /// darkSkyUrl control.
+        /// baseUrl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox darkSkyUrl;
+        protected global::System.Web.UI.WebControls.TextBox baseUrl;
         
         /// <summary>
         /// propLat control.
@@ -85,12 +85,12 @@ namespace WeatherTile {
         protected global::System.Web.UI.WebControls.TextBox propDays;
         
         /// <summary>
-        /// submitDarkSky control.
+        /// buildDarkSky control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitDarkSky;
+        protected global::System.Web.UI.WebControls.Button buildDarkSky;
     }
 }

@@ -10,12 +10,16 @@
             <table style="width: 100%; padding: 0 !important;" align="center" border="0" cellspacing="0" cellpadding="0">
               <thead style="background-color: #51565F; color: white;">
                 <tr style="height: 40px; font-family: Roboto, Arial, sans-serif; font-variant: normal; font-weight: 600; color: #2e2e2e; line-height: 1em">
-                  <td colspan="6" style="letter-spacing: initial;">
-                    <span id="locCityState" style="position: relative; left: .7em; top: .5em; font-size: 2em;">
+                  
+                  <td colspan="3" style="letter-spacing: initial;">
+                    <span id="propName" style="position:relative; left: .7em; top: .5em; font-size: 2em;" runat="server"></span>
+                  </td>
+                  <td colspan="3" style="letter-spacing: initial;">
+                    <span style="position: relative; left: 1.5em; top: 1em; font-size: 1.5em;">
                       <asp:Label ID="propCity" runat="server" Text=""></asp:Label>, 
                       <asp:Label ID="propState" runat="server" Text=""></asp:Label>
                     </span>
-                    <span id="locZip" style="position: relative; left: .7em; top: .5em; font-size: 2em;">
+                    <span id="locZip" style="position: relative; left: 1.2em; top: 1em; font-size: 1.5em;">
                       <asp:Label ID="propZip" runat="server" Text=""></asp:Label></span>
                   </td>
                 </tr>
@@ -56,20 +60,21 @@
                     <asp:Image runat="server" Width="50" Height="50" ID="pic5" /></td>
                 </tr>
                 <tr valign="top" style="font-family: Roboto, Arial, sans-serif; text-align: center; font-size: 2em; font-weight: 700; line-height: 1em; height: 50px;">
-                  <td id="hiTemp0" valign="middle" style="width: 100px"></td>
-                  <td id="hiTemp1" valign="middle" style="width: 100px"></td>
-                  <td id="hiTemp2" valign="middle" style="width: 100px"></td>
-                  <td id="hiTemp3" valign="middle" style="width: 100px"></td>
-                  <td id="hiTemp4" valign="middle" style="width: 100px"></td>
-                  <td id="hiTemp5" valign="middle" style="width: 100px"></td>
+                  <td id="hiTemp0" valign="middle" style="width: 100px" runat="server"></td>
+                  <td id="hiTemp1" valign="middle" style="width: 100px" runat="server"></td>
+                  <td id="hiTemp2" valign="middle" style="width: 100px" runat="server"></td>
+                  <td id="hiTemp3" valign="middle" style="width: 100px" runat="server"></td>
+                  <td id="hiTemp4" valign="middle" style="width: 100px" runat="server"></td>
+                  <td id="hiTemp5" valign="middle" style="width: 100px" runat="server"></td>
                 </tr>
                 <tr valign="top" style="font-family: Roboto, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #808080; font-size: 2em; font-weight: 500; height: 50px;">
-                  <td id="day00" valign="top" style="width: 100px"></td>
-                  <td id="day1" valign="top" style="width: 100px"></td>
-                  <td id="day2" valign="top" style="width: 100px"></td>
-                  <td id="day3" valign="top" style="width: 100px"></td>
-                  <td id="day4" valign="top" style="width: 100px"></td>
-                  <td id="day5" valign="top" style="width: 100px"></td>
+                  <td id="day00" valign="top" style="width: 100px" runat="server"></td>
+                  <td id="day1" valign="top" style="width: 100px" runat="server"></td>
+                  <td id="day2" valign="top" style="width: 100px" runat="server"></td>
+                  <td id="day3" valign="top" style="width: 100px" runat="server"></td>
+                  <td id="day4" valign="top" style="width: 100px" runat="server"></td>
+                  <td id="day5" valign="top" style="width: 100px" runat="server"></td>
+
                 </tr>
               </tbody>
             </table>
@@ -78,7 +83,9 @@
       </table>
     </div>
   </div>
-
+  <br />
+  <br />
+  <br />
   <script src="Scripts/moment.js"></script>
   <script>
     // Icon0
@@ -111,13 +118,36 @@
     $("#MainContent_pic5").attr('src', pic5src);
 
     var day0 = $("#MainContent_day0Day").text();
-    var newDay = moment.unix(day0).format('dddd');
-    var newDate = moment.unix(day0).format('ll');
-    $("#MainContent_day0Day").text(newDay);
-    $("#MainContent_day0Date").text(newDate);
+    var newDay0 = moment.unix(day0).format('dddd');
+    var newDate0 = moment.unix(day0).format('ll');
+    $("#MainContent_day0Day").text(newDay0);
+    $("#MainContent_day0Date").text(newDate0);
 
+    var day00 = $("#MainContent_day00").text();
+    var newDay00 = moment.unix(day00).format('ddd');
+    $("#MainContent_day00").text(newDay00);
 
-    console.log(newTimeDay + " " + newTimeDate);
+    var day1 = $("#MainContent_day1").text();
+    var newDay1 = moment.unix(day1).format('ddd');
+    $("#MainContent_day1").text(newDay1);
+
+    var day2 = $("#MainContent_day2").text();
+    var newDay2 = moment.unix(day2).format('ddd');
+    $("#MainContent_day2").text(newDay2);
+
+    var day3 = $("#MainContent_day3").text();
+    var newday3 = moment.unix(day3).format('ddd');
+    $("#MainContent_day3").text(newday3);
+
+    var day4 = $("#MainContent_day4").text();
+    var newday4 = moment.unix(day4).format('ddd');
+    $("#MainContent_day4").text(newday4);
+    
+    var day5 = $("#MainContent_day5").text();
+    var newday5 = moment.unix(day5).format('ddd');
+    $("#MainContent_day5").text(newday5);
+
+    
 
     function getIcon(iconDesc, picNo) {
 

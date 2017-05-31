@@ -68,8 +68,8 @@ namespace WeatherTile
         string json = client.DownloadString(url);
         DarkSkyResponse response = (new JavaScriptSerializer().Deserialize<DarkSkyResponse>(json));
         
-        Application["DarkSkyResponse"] = response;
-        Response.Redirect("DaWeatherTileForm.aspx");
+        Application["CurrentResponse"] = response;
+        Response.Redirect("WeatherTileForm.aspx");
 
       }
 

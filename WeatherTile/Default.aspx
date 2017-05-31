@@ -4,8 +4,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" EnableViewState="True">
 
 <div class="jumbotron">
-  <h1>daWeatherTile</h1>
-  <p class="lead">A daWeatherTile is a summary of current and forecasted weather formatted for HTML email.</p>
+  <h1>WeatherTile</h1>
+  <p class="lead">A WeatherTile is a summary of current and forecasted weather formatted for HTML email.</p>
   <p><a href="SetupForm.aspx" class="btn btn-primary btn-lg">Setup</a></p>
 </div>
 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.4\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.4\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -167,9 +167,99 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\icons-white\clear-day.svg" />
+    <Content Include="Content\icons-white\clear-dayhdpi.png" />
+    <Content Include="Content\icons-white\clear-dayldpi.png" />
+    <Content Include="Content\icons-white\clear-daymdpi.png" />
+    <Content Include="Content\icons-white\clear-dayxhdpi.png" />
+    <Content Include="Content\icons-white\clear-dayxxhdpi.png" />
+    <Content Include="Content\icons-white\clear-dayxxxhdpi.png" />
+    <Content Include="Content\icons-white\clear-night.svg" />
+    <Content Include="Content\icons-white\clear-nighthdpi.png" />
+    <Content Include="Content\icons-white\clear-nightldpi.png" />
+    <Content Include="Content\icons-white\clear-nightmdpi.png" />
+    <Content Include="Content\icons-white\clear-nightxhdpi.png" />
+    <Content Include="Content\icons-white\clear-nightxxhdpi.png" />
+    <Content Include="Content\icons-white\clear-nightxxxhdpi.png" />
+    <Content Include="Content\icons-white\cloudy.svg" />
+    <Content Include="Content\icons-white\cloudyhdpi.png" />
+    <Content Include="Content\icons-white\cloudyldpi.png" />
+    <Content Include="Content\icons-white\cloudymdpi.png" />
+    <Content Include="Content\icons-white\cloudyxhdpi.png" />
+    <Content Include="Content\icons-white\cloudyxxhdpi.png" />
+    <Content Include="Content\icons-white\cloudyxxxhdpi.png" />
+    <Content Include="Content\icons-white\fog.svg" />
+    <Content Include="Content\icons-white\foghdpi.png" />
+    <Content Include="Content\icons-white\fogldpi.png" />
+    <Content Include="Content\icons-white\fogmdpi.png" />
+    <Content Include="Content\icons-white\fogxhdpi.png" />
+    <Content Include="Content\icons-white\fogxxhdpi.png" />
+    <Content Include="Content\icons-white\fogxxxhdpi.png" />
+    <Content Include="Content\icons-white\hail.svg" />
+    <Content Include="Content\icons-white\hailhdpi.png" />
+    <Content Include="Content\icons-white\hailldpi.png" />
+    <Content Include="Content\icons-white\hailmdpi.png" />
+    <Content Include="Content\icons-white\hailxhdpi.png" />
+    <Content Include="Content\icons-white\hailxxhdpi.png" />
+    <Content Include="Content\icons-white\hailxxxhdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-day.svg" />
+    <Content Include="Content\icons-white\partly-cloudy-dayhdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-dayldpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-daymdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-dayxhdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-dayxxhdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-dayxxxhdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-night.svg" />
+    <Content Include="Content\icons-white\partly-cloudy-nighthdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-nightldpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-nightmdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-nightxhdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-nightxxhdpi.png" />
+    <Content Include="Content\icons-white\partly-cloudy-nightxxxhdpi.png" />
+    <Content Include="Content\icons-white\rain.svg" />
+    <Content Include="Content\icons-white\rainhdpi.png" />
+    <Content Include="Content\icons-white\rainldpi.png" />
+    <Content Include="Content\icons-white\rainmdpi.png" />
+    <Content Include="Content\icons-white\rainxhdpi.png" />
+    <Content Include="Content\icons-white\rainxxhdpi.png" />
+    <Content Include="Content\icons-white\rainxxxhdpi.png" />
+    <Content Include="Content\icons-white\sleet.svg" />
+    <Content Include="Content\icons-white\sleethdpi.png" />
+    <Content Include="Content\icons-white\sleetldpi.png" />
+    <Content Include="Content\icons-white\sleetmdpi.png" />
+    <Content Include="Content\icons-white\sleetxhdpi.png" />
+    <Content Include="Content\icons-white\sleetxxhdpi.png" />
+    <Content Include="Content\icons-white\sleetxxxhdpi.png" />
+    <Content Include="Content\icons-white\snow.svg" />
+    <Content Include="Content\icons-white\snowhdpi.png" />
+    <Content Include="Content\icons-white\snowldpi.png" />
+    <Content Include="Content\icons-white\snowmdpi.png" />
+    <Content Include="Content\icons-white\snowxhdpi.png" />
+    <Content Include="Content\icons-white\snowxxhdpi.png" />
+    <Content Include="Content\icons-white\snowxxxhdpi.png" />
+    <Content Include="Content\icons-white\thunderstorm.svg" />
+    <Content Include="Content\icons-white\thunderstormhdpi.png" />
+    <Content Include="Content\icons-white\thunderstormldpi.png" />
+    <Content Include="Content\icons-white\thunderstormmdpi.png" />
+    <Content Include="Content\icons-white\thunderstormxhdpi.png" />
+    <Content Include="Content\icons-white\thunderstormxxhdpi.png" />
+    <Content Include="Content\icons-white\thunderstormxxxhdpi.png" />
+    <Content Include="Content\icons-white\tornado.svg" />
+    <Content Include="Content\icons-white\tornadohdpi.png" />
+    <Content Include="Content\icons-white\tornadoldpi.png" />
+    <Content Include="Content\icons-white\tornadomdpi.png" />
+    <Content Include="Content\icons-white\tornadoxhdpi.png" />
+    <Content Include="Content\icons-white\tornadoxxhdpi.png" />
+    <Content Include="Content\icons-white\tornadoxxxhdpi.png" />
+    <Content Include="Content\icons-white\wind.svg" />
+    <Content Include="Content\icons-white\windhdpi.png" />
+    <Content Include="Content\icons-white\windldpi.png" />
+    <Content Include="Content\icons-white\windmdpi.png" />
+    <Content Include="Content\icons-white\windxhdpi.png" />
+    <Content Include="Content\icons-white\windxxhdpi.png" />
+    <Content Include="Content\icons-white\windxxxhdpi.png" />
     <Content Include="Content\Site.css" />
     <Content Include="DarkSkySettingsForm.aspx" />
-    <Content Include="DaWeatherTileForm.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -185,6 +275,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\icons-white\package.json" />
     <None Include="DarkSky.md" />
     <Content Include="package.json" />
     <Content Include="bower.json" />
@@ -199,6 +290,10 @@
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
@@ -229,6 +324,7 @@
     <Content Include="VerifySetupForm.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="DarkSkyBuildForm.aspx" />
+    <Content Include="WeatherTileForm.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -257,13 +353,6 @@
     </Compile>
     <Compile Include="DarkSkySettingsForm.aspx.designer.cs">
       <DependentUpon>DarkSkySettingsForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DaWeatherTileForm.aspx.cs">
-      <DependentUpon>DaWeatherTileForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DaWeatherTileForm.aspx.designer.cs">
-      <DependentUpon>DaWeatherTileForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -318,12 +407,18 @@
     <Compile Include="DarkSkyBuildForm.aspx.designer.cs">
       <DependentUpon>DarkSkyBuildForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WeatherTileForm.aspx.cs">
+      <DependentUpon>WeatherTileForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeatherTileForm.aspx.designer.cs">
+      <DependentUpon>WeatherTileForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="fonts\Models\" />
     <Folder Include="Properties\App_Data\" />
-    <Folder Include="Views\DataService\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -384,8 +479,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.4\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.4\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.2.0\build\Microsoft.Net.Compilers.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

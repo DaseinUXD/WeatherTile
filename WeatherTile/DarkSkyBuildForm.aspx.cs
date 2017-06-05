@@ -62,7 +62,6 @@ namespace WeatherTile
       string apiKey = request.DarkSkyRequestAPI;
       string baseUrl = request.DarkSkyRequestUrl;
 
-      private async void RequestData(string uri, Action<>)
       string url = string.Format(baseUrl + apiKey + '/' + buildLatitude + ',' + buildLongitude);
       using (WebClient client = new WebClient())
       {
@@ -70,7 +69,7 @@ namespace WeatherTile
         DarkSkyResponse response = (new JavaScriptSerializer().Deserialize<DarkSkyResponse>(json));
         
         Application["CurrentResponse"] = response;
-        Response.Redirect("WeatherTileForm.aspx");
+        Response.Redirect("WeatherTile.aspx");
 
       }
 

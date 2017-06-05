@@ -1,8 +1,15 @@
-﻿<%@ Page Title="WeatherTile Forecast" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WeatherTileForm.aspx.cs" Inherits="WeatherTile.WeatherTileForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WeatherTile.aspx.cs" Inherits="WeatherTile.WeatherTile" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<!DOCTYPE html>
 
-  <div class="container-fluid">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6">
         <h1>Table Version</h1>
@@ -51,7 +58,7 @@
                   <tbody style="background-color: #33343a; color: snow;">
                     <tr valign="bottom" style="font-family: Roboto, Arial, sans-serif; text-align: center; height: 80px;">
                       <td valign="bottom" style="width: 100px">
-                        <asp:Image runat="server" Width="50" Height="50" ID="pic00" /></td>
+                        <asp:Image runat="server" Width="50" Height="50" ID="Image1" /></td>
                       <td valign="bottom" style="width: 100px">
                         <asp:Image runat="server" Width="50" Height="50" ID="pic1" /></td>
                       <td valign="bottom" style="width: 100px">
@@ -130,11 +137,9 @@
       </div>
     </div>
   </div>
-
-  <br />
-  <br />
-  <br />
-  <script src="Scripts/moment.js"></script>
+    </div>
+    </form>
+    <script src="Scripts/moment.js"></script>
   <script>
     // Icon0
     var pic0src = 'Content/icons-white/' + $("#MainContent_pic0").attr('alt') + '.svg';
@@ -270,4 +275,5 @@
     //getIcon(pic4, pic4);
     //getIcon(pic5, pic5);
   </script>
-</asp:Content>
+</body>
+</html>

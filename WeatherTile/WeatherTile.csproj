@@ -332,6 +332,7 @@
     <Content Include="VerifySetupForm.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="DarkSkyBuildForm.aspx" />
+    <Content Include="WeatherTile.aspx" />
     <Content Include="WeatherTileForm.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -414,6 +415,13 @@
     </Compile>
     <Compile Include="DarkSkyBuildForm.aspx.designer.cs">
       <DependentUpon>DarkSkyBuildForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherTile.aspx.cs">
+      <DependentUpon>WeatherTile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeatherTile.aspx.designer.cs">
+      <DependentUpon>WeatherTile.aspx</DependentUpon>
     </Compile>
     <Compile Include="WeatherTileForm.aspx.cs">
       <DependentUpon>WeatherTileForm.aspx</DependentUpon>

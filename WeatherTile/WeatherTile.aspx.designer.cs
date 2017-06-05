@@ -10,7 +10,16 @@
 namespace WeatherTile {
     
     
-    public partial class WeatherTileForm {
+    public partial class WeatherTile {
+        
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// propName control.
@@ -85,13 +94,13 @@ namespace WeatherTile {
         protected global::System.Web.UI.WebControls.Label day0Date;
         
         /// <summary>
-        /// pic00 control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image pic00;
+        protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
         /// pic1 control.

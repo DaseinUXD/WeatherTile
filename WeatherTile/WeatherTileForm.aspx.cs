@@ -33,6 +33,16 @@ namespace WeatherTile
         propState.Text = property.PropertyState;
         propZip.Text = property.PropertyZipCode.ToString();
         currentTemp.Text = Math.Round(response.currently.temperature).ToString() + "&deg;";
+
+
+        divHotelName.InnerHtml = property.PropertyName;
+        divCity.InnerHtml = property.PropertyCity;
+        divState.InnerHtml = property.PropertyState;
+        divZip.InnerHtml = property.PropertyZipCode.ToString();
+        divCurrentTemp.InnerHtml = Math.Round(response.currently.temperature).ToString() + "&deg;";
+        
+       
+
         day0Day.Text = response.currently.time.ToString();
         day0Date.Text = response.currently.time.ToString();
 
@@ -49,6 +59,13 @@ namespace WeatherTile
         hiTemp3.InnerHtml = Math.Round(response.daily.data[3].temperatureMax).ToString() + "&deg;";
         hiTemp4.InnerHtml = Math.Round(response.daily.data[4].temperatureMax).ToString() + "&deg;";
         hiTemp5.InnerHtml = Math.Round(response.daily.data[5].temperatureMax).ToString() + "&deg;";
+
+        divTemp0.InnerHtml = Math.Round(response.daily.data[0].temperatureMax).ToString() + "&deg;";
+        divTemp1.InnerHtml = Math.Round(response.daily.data[1].temperatureMax).ToString() + "&deg;";
+        divTemp2.InnerHtml = Math.Round(response.daily.data[2].temperatureMax).ToString() + "&deg;";
+        divTemp3.InnerHtml = Math.Round(response.daily.data[3].temperatureMax).ToString() + "&deg;";
+        divTemp4.InnerHtml = Math.Round(response.daily.data[4].temperatureMax).ToString() + "&deg;";
+        divTemp5.InnerHtml = Math.Round(response.daily.data[5].temperatureMax).ToString() + "&deg;";
       } else
       {
         Console.WriteLine("Trouble Connecting to Dark Sky");

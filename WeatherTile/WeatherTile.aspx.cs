@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -58,6 +60,41 @@ namespace WeatherTile
       {
         Console.WriteLine("Trouble Connecting to Dark Sky");
       }
+    }
+  }
+
+  public class WebsiteToImage
+  {
+    private Bitmap m_Bitmap;
+    private string m_Url;
+    private string m_FileName = string.Empty;
+
+    public WebsiteToImage(string url)
+    {
+      // Without file
+      m_Url = url;
+    }
+
+    public WebsiteToImage(string url, string fileName)
+    {
+      //With file
+      m_Url = url;
+      m_FileName = fileName;
+    }
+
+    public Bitmap Generate()
+    {
+      // Thread
+      var m_thread = new Thread(_Generate);
+      m_thread.SetApartmentState(ApartmentState.STA);
+      m_thread.Start();
+      m_thread.Join();
+      return m_Bitmap;
+    }
+
+    private void _Generate()
+    {
+      var browser = new WebBrowser { ScrollBarsEnabled = false }; 
     }
   }
 }

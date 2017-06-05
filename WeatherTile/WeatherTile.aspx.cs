@@ -12,11 +12,12 @@ namespace WeatherTile
   {
     protected void Page_Load(object sender, EventArgs e)
     {
+
       PropertyInfo property = Application["CurrentProperty"] as PropertyInfo;
       GeoLocation geoLoc = Application["CurrentGeoLocation"] as GeoLocation;
       DarkSkySettings settings = Application["CurrentSettings"] as DarkSkySettings;
       DarkSkyResponse response = Application["CurrentResponse"] as DarkSkyResponse;
-
+           
 
       if (response.currently.icon != null)
       {

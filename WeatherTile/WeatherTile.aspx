@@ -2,13 +2,13 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
   <title>Weather Tile</title>
   <script src="Scripts/bootstrap.js"></script>
   <script src="Scripts/jquery-3.1.1.js"></script>
   <script src="Scripts/moment.js"></script>
-
+  
   <link rel="stylesheet" href="Content/bootstrap.css" />
   <link rel="stylesheet" href="Content/bootstrap-theme.css" />
   <link rel="stylesheet" href="Content/Site.css" />
@@ -151,50 +151,7 @@
     $("#day5").text(newDay5);
     $("#divForecastDay5").text(newDay5);
 
-    function getIcon(iconDesc, picNo) {
-
-      switch (iconDesc)
-      {
-        case 'clear-day':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/clear-day.svg';
-          break;
-        case 'clear-night':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/clear-night.svg';
-          break;
-        case 'cloudy':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/cloudy.svg';
-          break;
-        case 'fog':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/fog.svg';
-          break;
-        case 'hail':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/hail.svg';
-          break;
-        case 'partly-cloudy-day':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/partly-cloudy-day.svg';
-          break;
-        case 'partly-cloudy-night':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/partly-cloudy-night.svg';
-          break;
-        case 'rain':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/rain.svg';
-          break;
-        case 'sleet':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/sleet.svg';
-          break;
-        case 'snow':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/snow.svg';
-          break;
-        case 'thunderstorm':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/thunderstorm.svg';
-          break;
-        case 'tornado':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/tornado.svg';
-          break;
-        case 'wind':
-          document.getElementById(picNo).imageURL = 'Content/icons-white/wind.svg';
-      };
-    };
+    
 
   </script>
 </body>

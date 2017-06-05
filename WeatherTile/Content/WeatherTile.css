@@ -1,0 +1,74 @@
+﻿#divContent {
+  margin:auto;
+  width:1200px;
+}
+#divForecast {
+  margin:auto;
+  width:50%;
+
+}
+
+#divHotelName {
+  font-size: 2em;
+
+}
+
+#divCity {
+  float: left;
+  font-size: 2em;
+
+}
+
+#divState {
+  float: left;
+  font-size: 2em;
+}
+
+#divZip {
+  float: left;
+  font-size: 2em;
+
+}
+
+#divCurrentTemp {
+  font-size: 4em;
+  color: white;
+}
+
+#divCurrentDay {
+  position: relative;
+  top: 2em;
+
+}
+
+#divCurrentDate {
+  position: relative;
+  top: 2em;
+
+
+}
+
+#divForecastIcons {
+  text-align: center;
+  
+}
+
+#divForecastIcons img {
+  width: 50px;
+  height: 50px;
+
+}
+#divForecastTemps {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+
+}
+
+#divForecastDays {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  text-transform:uppercase;
+}

@@ -263,6 +263,7 @@
     <Content Include="Content\icons-white\windxxhdpi.png" />
     <Content Include="Content\icons-white\windxxxhdpi.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\WeatherTile.css" />
     <Content Include="DarkSkySettingsForm.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />

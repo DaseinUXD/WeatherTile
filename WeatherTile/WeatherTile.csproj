@@ -103,6 +103,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -323,6 +325,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SetupForm.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Tile.aspx" />
     <Content Include="VerifySetupForm.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="DarkSkyBuildForm.aspx" />
@@ -388,6 +391,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tile.aspx.cs">
+      <DependentUpon>Tile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tile.aspx.designer.cs">
+      <DependentUpon>Tile.aspx</DependentUpon>
     </Compile>
     <Compile Include="VerifySetupForm.aspx.cs">
       <DependentUpon>VerifySetupForm.aspx</DependentUpon>

@@ -5,8 +5,8 @@
 <html>
 <head runat="server">
   <title>Weather Tile</title>
-  <script src="Scripts/bootstrap.js"></script>
   <script src="Scripts/jquery-3.1.1.js"></script>
+  <script src="Scripts/bootstrap.js"></script>
   <script src="Scripts/moment.js"></script>
 
   <link rel="stylesheet" href="Content/bootstrap.css" />
@@ -79,9 +79,9 @@
         </div>
       </div>
     </div>
-    <asp:Button Text="Capture" runat="server" OnClick="Capture" />
+<%--    <asp:Button Text="Capture" runat="server" OnClick="Capture" />
     <br />
-    <asp:Image ID="imgScreenShot" runat="server" Height="300" Width="400" Visible="false" />
+    <asp:Image ID="imgScreenShot" runat="server" Height="300" Width="400" Visible="false" />--%>
 
 
     <script>

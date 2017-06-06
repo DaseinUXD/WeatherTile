@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-web-app",
+  "version": "0.0.0",
+  "description": "NodejsWebApp",
+  "main": "server.js",
+  "author": {
+    "name": "daseinuxd"
+  },
+  "devDependencies": {
+    "phantomjs": "^2.1.7"
+  }
+}

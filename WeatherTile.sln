@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.io.40", "..\Downlo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.io", "..\Downloads\dark-sky-api-csharp-master\dark-sky-api-csharp-master\forecast.io\Forecast.io.csproj", "{DA3B7B91-11D7-4CB8-8255-99E25A305E4C}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebApp", "NodejsWebApp\NodejsWebApp.njsproj", "{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{DA3B7B91-11D7-4CB8-8255-99E25A305E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA3B7B91-11D7-4CB8-8255-99E25A305E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA3B7B91-11D7-4CB8-8255-99E25A305E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

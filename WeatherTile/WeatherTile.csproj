@@ -364,6 +364,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\PhantomJSController.cs" />
     <Compile Include="DarkSkySettingsForm.aspx.cs">
       <DependentUpon>DarkSkySettingsForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -447,9 +448,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="fonts\Models\" />
+    <Folder Include="phantomjs\" />
     <Folder Include="Properties\App_Data\" />
+    <Folder Include="Views\PhantomJS\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

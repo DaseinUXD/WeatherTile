@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -56,6 +57,7 @@ namespace WeatherTile
         divTemp4.InnerHtml = Math.Round(response.daily.data[4].temperatureMax).ToString() + "&deg;";
         divTemp5.InnerHtml = Math.Round(response.daily.data[5].temperatureMax).ToString() + "&deg;";
 
+        
        
       }
       else
@@ -64,6 +66,18 @@ namespace WeatherTile
       }
      
     }
+
+    public void LaunchPhantomJS(object sender, EventArgs e)
+    {
+      Process phantom = new Process();
+      phantom.StartInfo.FileName = "cmd.exe";
+      phantom.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+      phantom.StartInfo.CreateNoWindow = false;
+      phantom.StartInfo.RedirectStandardInput = false;
+      phantom.StartInfo.UseShellExecute = true;
+      phantom.Start();
+    }
+
 
 
     //protected void Capture(object sender, EventArgs e)
@@ -96,14 +110,14 @@ namespace WeatherTile
     //  using (Bitmap bitmap = new Bitmap(browser.Width, browser.Height))
     //  {
     //    browser.DrawToBitmap(bitmap, new Rectangle(0, 0, browser.Width, browser.Height));
-    //      using (MemoryStream stream = new MemoryStream())
-    //      {
-    //        bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
-    //        byte[] bytes = stream.ToArray();
-    //        imgScreenShot.Visible = true;
-    //        imgScreenShot.ImageUrl = "data:image/png;base64," + Convert.ToBase64String(bytes);
-    //      }
-        
+    //    using (MemoryStream stream = new MemoryStream())
+    //    {
+    //      bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+    //      byte[] bytes = stream.ToArray();
+    //      imgScreenShot.Visible = true;
+    //      imgScreenShot.ImageUrl = "data:image/png;base64," + Convert.ToBase64String(bytes);
+    //    }
+
     //  }
     //}
   }

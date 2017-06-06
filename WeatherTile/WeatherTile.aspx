@@ -21,7 +21,7 @@
 
       <div id="divContent">
         <div id="divForecast">
-          <h1>Forecast</h1>
+          
           <div class="row">
             <div id="divHotelName" runat="server" class="col-lg-6">Hotel Name</div>
             <div class="col-lg-6">
@@ -79,39 +79,40 @@
         </div>
       </div>
     </div>
-<%--    <asp:Button Text="Capture" runat="server" OnClick="Capture" />
-    <br />
-    <asp:Image ID="imgScreenShot" runat="server" Height="300" Width="400" Visible="false" />--%>
+    <asp:Button Text="PhantomJS" runat="server" CssClass="btn btn-primary" OnClick="LaunchPhantomJS" />
+    <%--<asp:Button Text="Capture" runat="server" OnClick="Capture" />--%>
+
+    <%--<asp:Image ID="imgScreenShot" runat="server" Height="300" Width="400" Visible="false" />--%>
 
 
     <script>
       // Icon00
-      var pic00src = 'Content/icons-white/' + $("#imgCurrentIcon").attr('alt') + '.svg';
+      var pic00src = 'Content/icons-white/' + $("#imgCurrentIcon").attr('alt') + 'hdpi.png';
       console.log(pic00src);
       $("#imgCurrentIcon").attr('src', pic00src);
 
       // Icon0
-      var pic0src = 'Content/icons-white/' + $("#imgDay0Icon").attr('alt') + '.svg';
+      var pic0src = 'Content/icons-white/' + $("#imgDay0Icon").attr('alt') + 'hdpi.png';
       $("#imgDay0Icon").attr('src', pic0src);
 
       // Icon1
-      var pic1src = 'Content/icons-white/' + $("#imgDay1Icon").attr('alt') + '.svg';
+      var pic1src = 'Content/icons-white/' + $("#imgDay1Icon").attr('alt') + 'hdpi.png';
       $("#imgDay1Icon").attr('src', pic1src);
 
       // Icon2
-      var pic2src = 'Content/icons-white/' + $("#imgDay2Icon").attr('alt') + '.svg';
+      var pic2src = 'Content/icons-white/' + $("#imgDay2Icon").attr('alt') + 'hdpi.png';
       $("#imgDay2Icon").attr('src', pic2src);
 
       // Icon3
-      var pic3src = 'Content/icons-white/' + $("#imgDay3Icon").attr('alt') + '.svg';
+      var pic3src = 'Content/icons-white/' + $("#imgDay3Icon").attr('alt') + 'hdpi.png';
       $("#imgDay3Icon").attr('src', pic3src);
 
       // Icon4
-      var pic4src = 'Content/icons-white/' + $("#imgDay4Icon").attr('alt') + '.svg';
+      var pic4src = 'Content/icons-white/' + $("#imgDay4Icon").attr('alt') + 'hdpi.png';
       $("#imgDay4Icon").attr('src', pic4src);
 
       // Icon5
-      var pic5src = 'Content/icons-white/' + $("#imgDay5Icon").attr('alt') + '.svg';
+      var pic5src = 'Content/icons-white/' + $("#imgDay5Icon").attr('alt') + 'hdpi.png';
       $("#imgDay5Icon").attr('src', pic5src);
 
 

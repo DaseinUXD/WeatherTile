@@ -10,7 +10,7 @@
   <script src="Scripts/moment.js"></script>
 
   <link rel="stylesheet" href="Content/bootstrap.css" />
-  <link rel="stylesheet" href="Content/bootstrap-theme.css" />
+  
   <link rel="stylesheet" href="Content/Site.css" />
   <link rel="stylesheet" href="Content/WeatherTile.css" />
 </head>
@@ -80,6 +80,8 @@
       </div>
     </div>
     <asp:Button Text="PhantomJS" runat="server" CssClass="btn btn-primary" OnClick="LaunchPhantomJS" />
+    <asp:Button Text="Rasterize" runat="server" CssClass="btn btn-primary" OnClick="RasterizePage" />
+    <asp:Button Text="Close All" runat="server" CssClass="btn btn-primary" OnClick="CloseAll" />
     <%--<asp:Button Text="Capture" runat="server" OnClick="Capture" />--%>
 
     <%--<asp:Image ID="imgScreenShot" runat="server" Height="300" Width="400" Visible="false" />--%>

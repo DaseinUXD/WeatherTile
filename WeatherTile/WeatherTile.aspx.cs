@@ -71,11 +71,35 @@ namespace WeatherTile
     {
       Process phantom = new Process();
       phantom.StartInfo.FileName = "cmd.exe";
-      phantom.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
-      phantom.StartInfo.CreateNoWindow = false;
-      phantom.StartInfo.RedirectStandardInput = false;
-      phantom.StartInfo.UseShellExecute = true;
+      phantom.StartInfo.CreateNoWindow = true;
+      phantom.StartInfo.RedirectStandardInput = true;
+      phantom.StartInfo.UseShellExecute = false;
       phantom.Start();
+      phantom.StandardInput.WriteLine("cd c:/users/mark/weathertile/weathertile/phantomjs && gulp run");
+      //phantom.StandardInput.Flush();
+      //phantom.StandardInput.Close();
+      //phantom.WaitForExit();
+      
+    }
+
+    public void RasterizePage(object sender, EventArgs e)
+    {
+      Process rasterize = new Process();
+      rasterize.StartInfo.FileName = "cmd.exe";
+      rasterize.StartInfo.CreateNoWindow = true;
+      rasterize.StartInfo.RedirectStandardInput = true;
+      rasterize.StartInfo.UseShellExecute = false;
+      rasterize.Start();
+      rasterize.StandardInput.WriteLine("cd c:/users/mark/weathertile/weathertile/phantomjs && phantomjs rasterize.js http://localhost:51027/WeatherTile forecast.png 600px*350px");
+      rasterize.StandardInput.Flush();
+      rasterize.StandardInput.Close();
+      //phantom.WaitForExit();
+
+    }
+
+    public void CloseAll(object sender, EventArgs e)
+    {
+      
     }
 
 

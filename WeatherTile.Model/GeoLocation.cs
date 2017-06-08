@@ -1,15 +1,14 @@
-﻿namespace WeatherTile.Model
+﻿using System;
+using System.Collections.Generic;
+
+namespace WeatherTile.Models
 {
   public class GeoLocation
   {
-    public float lat { get; set; }
-    public float lng { get; set; }
+    public int GeoLocationID { get; set; }
+    public float latitude { get; set; }
+    public float longitude { get; set; }
   }
 
-  //public class GeoLocDownload
-  //{
-  //  public float lat { get; set; }
-  //  public float lng { get; set; }
-        
-  //}
+
 }

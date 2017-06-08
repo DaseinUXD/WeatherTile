@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WeatherTile.Model;
+using WeatherTile.Models;
 using System.Net;
 using System.Web.Script.Serialization;
 

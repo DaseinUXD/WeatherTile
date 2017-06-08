@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile", "WeatherTile\WeatherTile.csproj", "{44962979-EE2E-4874-8CB8-7A5961D7A927}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6AE33A0F-8C6B-484A-9585-BC3B71BD7A5C} = {6AE33A0F-8C6B-484A-9585-BC3B71BD7A5C}
-	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dark-weather", "..\Dropbox\dark-weather\", "{C5C9BE7D-7D23-40AB-95EE-ED9E45D52077}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -29,7 +26,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dark-weather", "..\Dropbox\
 		SlnRelativePath = "..\Dropbox\dark-weather\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile.Model", "WeatherTile.Model\WeatherTile.Model.csproj", "{101FA093-95B2-49E8-A172-100FD7310AC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile.Models", "WeatherTile.Model\WeatherTile.Models.csproj", "{101FA093-95B2-49E8-A172-100FD7310AC1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTile.Repository", "WeatherTile.Repository\WeatherTile.Repository.csproj", "{E05689D3-1032-4250-9E78-ADB2E86AD2A7}"
 EndProject
@@ -43,8 +40,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.io", "..\Downloads\dark-sky-api-csharp-master\dark-sky-api-csharp-master\forecast.io\Forecast.io.csproj", "{DA3B7B91-11D7-4CB8-8255-99E25A305E4C}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebApp", "NodejsWebApp\NodejsWebApp.njsproj", "{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "..\reports-w-phantomjs\reports-with-phantomjs-master\aspnet\App\App.csproj", "{6AE33A0F-8C6B-484A-9585-BC3B71BD7A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,10 +75,6 @@ Global
 		{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{791BB482-3168-4EA4-ACEE-B09B71BC7EFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AE33A0F-8C6B-484A-9585-BC3B71BD7A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AE33A0F-8C6B-484A-9585-BC3B71BD7A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AE33A0F-8C6B-484A-9585-BC3B71BD7A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AE33A0F-8C6B-484A-9585-BC3B71BD7A5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -60,9 +60,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WeatherTile.Model\WeatherTile.Model.csproj">
+    <ProjectReference Include="..\WeatherTile.Model\WeatherTile.Models.csproj">
       <Project>{101fa093-95b2-49e8-a172-100fd7310ac1}</Project>
-      <Name>WeatherTile.Model</Name>
+      <Name>WeatherTile.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

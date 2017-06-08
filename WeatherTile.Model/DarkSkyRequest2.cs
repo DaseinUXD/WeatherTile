@@ -8,7 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherTile.Model
+namespace WeatherTile.Models
 {
   public class DarkSkyRequest2
   {

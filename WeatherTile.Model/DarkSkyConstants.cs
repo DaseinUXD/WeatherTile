@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherTile.Model
+namespace WeatherTile.Models
 {
   public enum MeasurementUnit
   {

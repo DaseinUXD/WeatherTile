@@ -365,6 +365,8 @@
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\PhantomJSController.cs" />
+    <Compile Include="DAL\ForecastContext.cs" />
+    <Compile Include="DAL\ForecastInitializer.cs" />
     <Compile Include="DarkSkySettingsForm.aspx.cs">
       <DependentUpon>DarkSkySettingsForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -465,9 +467,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WeatherTile.Model\WeatherTile.Model.csproj">
+    <ProjectReference Include="..\WeatherTile.Model\WeatherTile.Models.csproj">
       <Project>{101fa093-95b2-49e8-a172-100fd7310ac1}</Project>
-      <Name>WeatherTile.Model</Name>
+      <Name>WeatherTile.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\WeatherTile.Repository\WeatherTile.Repository.csproj">
       <Project>{e05689d3-1032-4250-9e78-adb2e86ad2a7}</Project>

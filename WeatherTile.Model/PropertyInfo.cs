@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherTile.Model
+namespace WeatherTile.Models
 {
   public class PropertyInfo
   {
@@ -14,6 +14,7 @@ namespace WeatherTile.Model
     public string PropertyState { get; set; }
     public int PropertyZipCode { get; set; }
     public int PropertySendDays { get; set; }
+
 
   }
 }

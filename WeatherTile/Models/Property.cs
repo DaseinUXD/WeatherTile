@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WeatherTile.Models
 {
-  public class Property
+  public class HotelProperty
   {
     public int ID { get; set; }
     public string Name { get; set; }
@@ -16,7 +16,7 @@ namespace WeatherTile.Models
     
 
     public virtual ICollection<Request> Requests { get; set; }
-    public virtual ICollection<Geolocation> Geolocations { get; set; }
+    public virtual ICollection<GeoLocation> GeoLocations { get; set; }
 
      
   }

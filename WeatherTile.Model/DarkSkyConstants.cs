@@ -31,7 +31,7 @@ namespace WeatherTile.Models
     hourly
   }
 
-  public enum Language
+  public enum Lang
   {
     ar,
     az,

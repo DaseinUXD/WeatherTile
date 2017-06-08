@@ -32,8 +32,8 @@ namespace WeatherTile
       propCity.Text = property.PropertyCity;
       propState.Text = property.PropertyState;
 
-      propLat.Text = geoLoc.lat.ToString();
-      propLon.Text = geoLoc.lng.ToString();
+      propLat.Text = geoLoc.Latitude.ToString();
+      propLon.Text = geoLoc.Longitude.ToString();
       propDays.Text = property.PropertySendDays.ToString();
 
       apiKey.Text = settings.darkSkyApiKey;
@@ -51,8 +51,8 @@ namespace WeatherTile
 
       var request = new DarkSkyRequest();
       request.DarkSkyRequestAPI = settings.darkSkyApiKey;
-      request.DarkSkyLatitude = geoLoc.lat;
-      request.DarkSkyLongitude = geoLoc.lng;
+      request.DarkSkyLatitude = geoLoc.Latitude;
+      request.DarkSkyLongitude = geoLoc.Longitude;
       request.DarkSkyRequestUrl = settings.darkSkyUrl;
 
       Application["CurrentRequest"] = request;

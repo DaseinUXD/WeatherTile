@@ -37,8 +37,8 @@ namespace WeatherTile
       {
         string json = client.DownloadString(url);
         GeoLocation geoLoc = (new JavaScriptSerializer().Deserialize<GeoLocation>(json));
-        float lat = geoLoc.lat;
-        float lng = geoLoc.lng;
+        float lat = geoLoc.Latitude;
+        float lng = geoLoc.Longitude;
         
         Application["GeoLocation"] = geoLoc;
       }

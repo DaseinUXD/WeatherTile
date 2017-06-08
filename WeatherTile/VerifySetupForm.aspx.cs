@@ -21,8 +21,8 @@ namespace WeatherTile
       propZip.Text = property.PropertyZipCode.ToString();
       propSendDays.Text = property.PropertySendDays.ToString();
       
-      propLat.Text = geoLoc.lat.ToString();
-      propLon.Text = geoLoc.lng.ToString();
+      propLat.Text = geoLoc.Latitude.ToString();
+      propLon.Text = geoLoc.Longitude.ToString();
 
       Application["CurrentGeoLocation"] = geoLoc;
       

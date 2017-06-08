@@ -27,7 +27,7 @@ namespace WeatherTile.Models
     public Language Language { get; set; }
     public Excludes Excludes { get; set; }
     public virtual Response Response { get; set; }
-    public virtual Property Property { get; set; }
-    public virtual GeoLocation GeoLocation { get; set}
+    public virtual ICollection<HotelProperty> Property { get; set; }
+    public virtual ICollection<GeoLocation> GeoLocation { get; set; }
   }
 }

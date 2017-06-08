@@ -9,7 +9,7 @@ namespace WeatherTile.DAL
     public ForecastContext() : base("ForecastContext")
     {
     }
-    public DbSet<Property> Propertys { get; set; }
+    public DbSet<HotelProperty> Propertys { get; set; }
     public DbSet<Request> Requests { get; set; }
     public DbSet<GeoLocation> GeoLocations { get; set; }
     public DbSet<Response> Responses { get; set; }

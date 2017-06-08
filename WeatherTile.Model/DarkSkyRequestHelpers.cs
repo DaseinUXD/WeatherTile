@@ -27,17 +27,17 @@ namespace WeatherTile.Models
       return string.Join(",", input.Select(i => Enum.GetName(typeof(Extend), i)));
     }
 
-    public static string FormatLanguageEnum(Language? lang)
-    {
-      if (lang == Language.xpiglatin)
-      {
-        return "x-pig-latin";
-      }
-      if (lang == Language.zhtw)
-      {
-        return "zh-tw";
-      }
-      return lang.ToString();
-    }
+  //  public static string FormatLanguageEnum(Language? lang)
+  //  {
+  //    if (lang == Language.xpiglatin)
+  //    {
+  //      return "x-pig-latin";
+  //    }
+  //    if (lang == Language.zhtw)
+  //    {
+  //      return "zh-tw";
+  //    }
+  //    return lang.ToString();
+  //  }
   }
 }
